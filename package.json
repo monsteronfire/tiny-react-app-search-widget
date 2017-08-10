@@ -4,7 +4,8 @@
   "description": "",
   "main": "webpack.config.babel.js",
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "serve": "webpack-dev-server"
   },
   "babel": {
     "presets": [

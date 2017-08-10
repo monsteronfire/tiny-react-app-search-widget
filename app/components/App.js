@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from '../index.css';
 
 class App extends React.Component {
   render() {
     return (
       <div className='app-container'>
-        app
+        <p className={styles.redFont}>app</p>
       </div>
     )
   }
