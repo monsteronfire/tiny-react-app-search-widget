@@ -1,3 +1,13 @@
 .red-font {
   color: red;
 }
+
+/*Form Styles*/
+.full-width {
+  display: block;
+  width: 100%;
+}
+
+.full-width select {
+  width: 100%;
+}
