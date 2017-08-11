@@ -6,10 +6,16 @@ class DatePicker extends React.Component {
     this.state = {
       value: ''
     };
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
     event.preventDefault();
+    this.setState(
+      {
+        value: event.target.value
+      }
+    );
   }
 
   render() {

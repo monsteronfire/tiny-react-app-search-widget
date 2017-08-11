@@ -5,6 +5,16 @@ import Button from './shared/Button';
 import styles from '../index.css';
 
 class SearchForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    event.preventDefault;
+    console.log('yolo');
+  }
+
   render() {
     return (
       <form className='search-form-wrapper'>
@@ -16,7 +26,7 @@ class SearchForm extends React.Component {
           <DatePicker/>
         </div>
         <div className={styles.fullWidth}>
-          <Button type='submit' text='Submit'/>
+          <Button type='button' text='Submit'/>
         </div>
       </form>
     )
